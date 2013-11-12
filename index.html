@@ -14,13 +14,22 @@
 	<script src="../app/js/bootstrap.js"></script>	
 
 	<style type="text/css">
-		.tab-pane {
-			height:800px;
-		}
 
 		.img-scroll{
 			height:500px;
 			width:1280px;
+			position: relative;
+		}
+
+		.img-event{
+			height:300px;
+			width:260px;
+				
+		}
+		.img-text{
+			position: absolute;
+			top: 10px;
+			left: 10px;
 		}
 	</style>
 	
@@ -28,7 +37,7 @@
 </head>
 <body>
 
-<div class="container" style="background-color:#F0F0F0  ;">
+<div class="container">
 	<div class="navbar" style="margin-bottom:0px">
 		<div class="navbar-inner" >
 			<ul class="nav row-fluid nav-tabs" id="myTab">
@@ -43,8 +52,6 @@
 
 	<div class="tab-content">
 		<div class="tab-pane active" id="home">
-
-
 			<div>
 				<div id="myCarousel" class="carousel slide">
 				  <ol class="carousel-indicators">
@@ -59,9 +66,15 @@
 				    </div>
 				    <div class="item">
 				    	<img class="img-scroll" src="../app/img/road.jpg" />
+				    	<div class="img-text" style="color:white">
+				    		<h3>CHINESE ENTREPRENEURS CLUB OF NEW YORK</h3>
+				    	</div>
 				    </div>
 				    <div class="item">
 				    	<img class="img-scroll" src="../app/img/collaboration.jpg" />
+				    	<div class="img-text">
+				    		<h3>CHINESE ENTREPRENEURS CLUB OF NEW YORK</h3>
+				    	</div>
 				    </div>
 				  </div>
 				  <!-- Carousel nav -->
@@ -70,16 +83,35 @@
 				</div>
 			</div>
 
-			<div class="text-center">
-				<h2>Mission</h2>
-				<p>A community that provides a platform for like-minded Chinese entrepreneurs to meet new friends, to share, develop and perfect business ideas, to collaborate on projects of similar interest, and above all, to support each member, both in spirit and in strength. </p>
+			<div class="row">
+				<div class="span4">
+					<img class="img-event" src="../app/img/phone_icon.jpg" />
+					<div>
+				    	<h4>App Development</h4>
+				    	<h4>11-23-2013</h4>
+				    </div>
+				</div>
+				<div class="span4">
+					<img class="img-event" src="../app/img/fashion_table.jpg" />
+					<div>
+				    	<h4>Fashion Round Table</h4>
+				    	<h4>11-09-2013</h4>
+				    </div>
+
+				</div>
+				<div class="span4">
+					<img class="img-event" src="../app/img/poster.jpg" />
+					<div>
+				    	<h4>Join us</h4>
+				    </div>
+
+				</div>
 			</div>
 		</div>
 		<div class="tab-pane inline" id="about">
 
 			<div class="row">
 				<div class="span8">
-					<h2>About</h2>	
 					<br/>		
 					<h4>Objectives:</h4>
 					<ul>
@@ -93,13 +125,8 @@
 					</ul>
 
 					<br/>
-					<h4>What to expect next</h4>
-					<ul>
-						<li>Details of the upcoming event around December 7 or 8</li>
-						<li>Detailed process to participate in events</li>
-						<li>Detailed process to join the teams.</li>
-						<li>Framework on the election on or around 01/18/14</li>
-					</ul>
+					<h4>Mission</h4>
+						<p>A community that provides a platform for like-minded Chinese entrepreneurs to meet new friends, to share, develop and perfect business ideas, to collaborate on projects of similar interest, and above all, to support each member, both in spirit and in strength. </p>
 				</div>
 
 				<div class="span4">
@@ -117,9 +144,11 @@
 		<div class="tab-pane" id="event">
 			<div class="text-center">
 				<img src="../app/img/event.jpg" />
-				<br/><br/><br/><br/>
-				<h3>Upcoming Events</h3>
-				<p>Next Event Nov.</p>
+				<br/><br/>
+				<img class="img-event" src="../app/img/phone_icon.jpg" />					
+				<strong>Next Event App Development Nov. 23</strong>
+				<strong><a>Join Now</a></strong>
+				
 			</div>
 		</div>
 	</div>		
@@ -128,11 +157,12 @@
 </div>
 
 <footer>
-	<div class="text-center" style="background-color:#F5F5DC;height:120px;">
+	<div class="text-center" style="height:120px;">
 		<div>
 			<br/><br/>
 			<p>CHINESE ENTREPRENEURS CLUB OF NEW YORK</p>
 			<p>New York, NY</p>
+			<small>Copyright © 2013 CECNY All rights reserved. Terms of Use Privacy Policy</small>
 		</div>
 	</div>
 </footer>
@@ -140,7 +170,7 @@
 <script>
 	$(function(){
 		$('.carousel').carousel({
-			interval: 2000
+			interval: 3000
 		})
 
 	})
