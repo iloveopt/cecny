@@ -120,7 +120,19 @@
     transform: scale(1.2);
 	background-image: url("../img/icons/join_active.png"); 
 }
-
+.i-team{
+	height: 420px;
+	width: 267px;
+	margin-left: 160px;
+	background-position:0px 0px;
+	background-image: url("../img/team/logo_dark.png");
+}
+.i-team:hover {
+	height: 420px;
+	width: 267px;
+	background-position:0px 0px;	
+	background-image: url("../img/team/logo_active.png"); 
+}
 
 .img-scroll{
 	height:500px;
