@@ -32,7 +32,7 @@
 <div class="container" style="margin-top: 40px">
 	
 	<div class="tab-content content">
-		<div class="tab-pane" id="home">
+		<div class="tab-pane active" id="home">
 			<div>
 				<div id="myCarousel" class="carousel slide">
 				  <ol class="carousel-indicators">
@@ -64,48 +64,47 @@
 				</div>
 			</div>
 
-			<div class="row align-center">
-				<div class="span3"></div>
-				<a href="https://docs.google.com/forms/d/1r8uXS2Q5uCsArLM7u3vtGTPJpiWeEyGhkHIiFHUVII8/viewform"><div class="span4 cecny-icon i-join-us"></div></a>
-				<a href="mailto:cecofny@gmail.com"><div class="span4 cecny-icon i-contact-us"></div></a>
-				<a href="https://www.facebook.com/pages/CECNY-%E7%BA%BD%E7%BA%A6%E5%8D%8E%E4%BA%BA%E5%88%9B%E4%B8%9A%E8%80%85%E4%BF%B1%E4%B9%90%E9%83%A8/741034295922390"><div class="span4 social-icon i-facebook"></div></a>
-				<a href="http://www.linkedin.com/profile/view?id=299855281"><div class="span4 social-icon i-linkedin"></div></a>
-				<a href="http://www.weibo.com/u/3839154238"><div class="span4 social-icon i-weibo"></div></a>
-				<a href="/wechat" target="_blank"><div class="span4 social-icon i-wechat"></div></a>
+			<div class="row align-center" style="margin-top:80px">	
+				<a href="https://docs.google.com/forms/d/1r8uXS2Q5uCsArLM7u3vtGTPJpiWeEyGhkHIiFHUVII8/viewform"><div class="span4 zoom-img cecny-icon i-join-us" style="margin-left:230px;"></div></a>
+				<a href="mailto:cecofny@gmail.com"><div class="span4 zoom-img cecny-icon i-contact-us"></div></a>
+				<a href="https://www.facebook.com/pages/CECNY-%E7%BA%BD%E7%BA%A6%E5%8D%8E%E4%BA%BA%E5%88%9B%E4%B8%9A%E8%80%85%E4%BF%B1%E4%B9%90%E9%83%A8/741034295922390"><div class="span4 zoom-img social-icon i-facebook"></div></a>
+				<a href="http://www.linkedin.com/profile/view?id=299855281"><div class="span4 zoom-img social-icon i-linkedin"></div></a>
+				<a href="http://www.weibo.com/u/3839154238"><div class="span4 zoom-img social-icon i-weibo"></div></a>
+				<a href="/wechat" target="_blank"><div class="span4 zoom-img social-icon i-wechat"></div></a>
 				</br>				
 			</div>
 		</div>
 
-		<div class="tab-pane active" id="about">
+		<div class="tab-pane" id="about">
 
 			<div class="container-fluid">
 				<br/><br/>
 				<div class="row-fluid">
-					<div class="span2">
-						<div>
-							<img class="" src="../app/img/team/ep.png"/>
+					<div class="span2" style="margin-top:20px">
+						<div class="zoom-img" style="margin-top: 15px">
+							<a class="team-popover" data-toggle="tooltip" data-placement="right" data-content="Event Planning Team are resonsble for blablabla" title data-original-title="Event Planning"><img src="../app/img/team/ep.png"/></a>
 						</div>
-						<div>
-							<img class="" src="../app/img/team/tech.png"/>
+						<div class="zoom-img" style="margin-top: 15px">
+							<a class="team-popover" data-toggle="tooltip" data-placement="right" data-content="Tech Team are resonsble for blablabla" title data-original-title="Technology"><img class="" src="../app/img/team/tech.png"/></a>
 						</div>
-						<div>
-							<img class="" src="../app/img/team/design.png"/>
+						<div class="zoom-img" style="margin-top: 15px">
+							<a class="team-popover" data-toggle="tooltip" data-placement="right" data-content="Design Team are resonsble for blablabla" title data-original-title="Design"><img class="" src="../app/img/team/design.png"/></a>
 						</div>
 						
 					</div>
 					<div class="span8">
 							<br/>
-							<div class="i-team"></div>
+							<div class="i-team zoom-img"></div>
 					</div>
-					<div class="span2">
-						<div>
-							<img class="" src="../app/img/team/admin.png"/>
+					<div class="span2" style="margin-top:40px">
+						<div class="zoom-img" style="margin-top: 15px">
+							<a class="team-popover" data-toggle="popover" data-placement="left" data-content="Admin Team are resonsble for blablabla" title data-original-title="Admin"><img class="" src="../app/img/team/admin.png"/></a>
 						</div>
-						<div>
-							<img class="" src="../app/img/team/commu.png"/>
+						<div class="zoom-img" style="margin-top: 15px">
+							<a class="team-popover" data-toggle="popover" data-placement="left" data-content="Communication Team are resonsble for blablabla" title data-original-title="Communication"><img class="" src="../app/img/team/commu.png"/></a>
 						</div>
-						<div>
-							<img class="" src="../app/img/team/finance.png"/>
+						<div class="zoom-img" style="margin-top: 15px">
+							<a class="team-popover" data-toggle="popover" data-placement="left" data-content="Finance Team are resonsble for blablabla" title data-original-title="Finance"><img class="" src="../app/img/team/finance.png"/></a>
 						</div>
 					</div>
 				</div>
@@ -157,9 +156,14 @@
 	$(function(){
 		$('.carousel').carousel({
 			interval: 1113000
-		})
+		});
+		$('.team-popover').popover();
+		$('.team-popover').tooltip();
 
 	})
+
+
+
 </script>
 
 

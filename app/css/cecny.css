@@ -1,5 +1,5 @@
 .container {
-	height: 800px
+	height: 700px
 }
 
 
@@ -16,35 +16,19 @@
 	width: 64px;
 	background-position:0px 0px;
 	background-image: url("../img/icons/facebook_dark.png");
-	-webkit-transition: -webkit-transform 0.2s;
-    -moz-transition: -moz-transform 0.2s;
-    -ms-transition: -ms-transform 0.2s;
-    transition: transform 0.2s;
 }
 .i-facebook:hover {
 	height: 68px;
 	background-image: url("../img/icons/facebook_active.png"); 
-	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
 }
 .i-linkedin{
 	height: 64px;
 	width: 64px;
 	background-position:0px 0px;
 	background-image: url("../img/icons/in_dark.png");
-	-webkit-transition: -webkit-transform 0.2s;
-    -moz-transition: -moz-transform 0.2s;
-    -ms-transition: -ms-transform 0.2s;
-    transition: transform 0.2s;
 }
 .i-linkedin:hover {
 	height: 68px;
-	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
 	background-image: url("../img/icons/in_active.png"); 
 }
 .i-weibo{
@@ -52,17 +36,9 @@
 	width: 64px;
 	background-position:0px 0px;
 	background-image: url("../img/icons/weibo_dark.png");
-	-webkit-transition: -webkit-transform 0.2s;
-    -moz-transition: -moz-transform 0.2s;
-    -ms-transition: -ms-transform 0.2s;
-    transition: transform 0.2s;
 }
 .i-weibo:hover {
 	height: 68px;
-	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
 	background-image: url("../img/icons/weibo_active.png"); 
 }
 .i-wechat{
@@ -70,17 +46,9 @@
 	width: 64px;
 	background-position:0px 0px;
 	background-image: url("../img/icons/wechat_dark.png");
-	-webkit-transition: -webkit-transform 0.2s;
-    -moz-transition: -moz-transform 0.2s;
-    -ms-transition: -ms-transform 0.2s;
-    transition: transform 0.2s;
 }
 .i-wechat:hover {
 	height: 68px;
-	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
 	background-image: url("../img/icons/wechat_active.png"); 
 }
 
@@ -89,17 +57,9 @@
 	width: 64px;
 	background-position:0px 0px;
 	background-image: url("../img/icons/mail_dark.png");
-	-webkit-transition: -webkit-transform 0.2s;
-    -moz-transition: -moz-transform 0.2s;
-    -ms-transition: -ms-transform 0.2s;
-    transition: transform 0.2s;
 }
 .i-contact-us:hover {
 	height: 68px;
-	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
 	background-image: url("../img/icons/mail_active.png"); 
 }
 .i-join-us{
@@ -107,17 +67,9 @@
 	width: 64px;
 	background-position:0px 0px;
 	background-image: url("../img/icons/join_dark.png");
-	-webkit-transition: -webkit-transform 0.2s;
-    -moz-transition: -moz-transform 0.2s;
-    -ms-transition: -ms-transform 0.2s;
-    transition: transform 0.2s;
 }
 .i-join-us:hover {
 	height: 68px;
-	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
 	background-image: url("../img/icons/join_active.png"); 
 }
 .i-team{
@@ -147,6 +99,20 @@
 	position: absolute;
 	top: 10px;
 	left: 10px;
+}
+
+
+.zoom-img {
+    -webkit-transition: -webkit-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -ms-transition: -ms-transform 0.2s;
+    transition: transform 0.2s;
+}
+.zoom-img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .align-center {
